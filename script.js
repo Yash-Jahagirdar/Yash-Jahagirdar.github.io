@@ -40,7 +40,7 @@ function isElementInViewport(el) {
 // Copy email to clipboard
 document.querySelector('.email-copy-btn').addEventListener('click', function(e) {
     e.preventDefault();
-    const email = 'yash.jahagirdar30@gmail.com';
+    const email = 'yash.aj303@gmail.com';
     
     navigator.clipboard.writeText(email).then(() => {
         // Show success message
