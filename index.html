@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Jahagirdar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Your existing CSS remains the same, just adding new sections */
+        
+        /* Certifications Section */
+        .certifications {
+            background-color: #f8f9fa;
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .cert-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .cert-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-card .provider {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-card .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Extra-curricular Section */
+        .extra-curricular {
+            background-color: white;
+        }
+        
+        .activities {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .activity-card {
+            background: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+        
+        .activity-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation (same as before) -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Yash<span>J</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Updated -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span style="color: var(--secondary-color);">Yash Jahagirdar</span></h1>
+                    <p>Computer Engineering Student | Data Analyst | ML Enthusiast</p>
+                    <p>Pimpri Chinchwad College of Engineering, Pune | CGPA: 9.25</p>
+                    <a href="#projects" class="btn">View My Projects</a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-img-container">
+                        <img src="assets/My_Photo.jpeg" alt="Yash Jahagirdar" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Updated -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Computer Engineering student with strong interest in Data Science, Machine Learning, and Software Development. I enjoy finding creative solutions to complex problems and continuously strive to learn and improve my skills.</p>
+                    
+                    <h3>Education</h3>
+                    <p><strong>Bachelor of Technology, Computer Engineering</strong><br>
+                    Pimpri Chinchwad College of Engineering, Pune<br>
+                    CGPA: 9.25 (Till Sem VI) | 2022 - 2026</p>
+
+                    <h3>Work Experience</h3>
+                    <p><strong>Data Analyst</strong> at ActDBI Inc. | October 2024 - July 2025</p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python & Data Science</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Java & C++</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL & Databases</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Web Development</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Updated with Your Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Stock Market Prediction -->
+                <div class="project-card">
+                    <img src="assets/stock_market_prediction.jpg" alt="Stock Market Prediction" class="project-img">
+                    <div class="project-info">
+                        <h3>Stock Market Prediction</h3>
+                        <p>Machine Learning system predicting stock closing prices using Linear Regression with 99.3% accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Regression</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fraud Detection -->
+                <div class="project-card">
+                    <img src="assets/fraudulent_payment_detection.jpg" alt="Fraud Detection" class="project-img">
+                    <div class="project-info">
+                        <h3>Fraudulent Payments Detection</h3>
+                        <p>ML model identifying fraudulent online payments with 99.973% accuracy using classification algorithms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jarvis Assistant -->
+                <div class="project-card">
+                    <img src="assets/jarvis_desktop_assisstant.jpg" alt="Jarvis Assistant" class="project-img">
+                    <div class="project-info">
+                        <h3>Jarvis Desktop Assistant</h3>
+                        <p>Voice-controlled assistant performing various tasks using APIs like OpenWeatherMap and WolframAlpha.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Voting System -->
+                <div class="project-card">
+                    <img src="assets/online_voting_system.jpg" alt="Online Voting System" class="project-img">
+                    <div class="project-info">
+                        <h3>Online Voting System</h3>
+                        <p>Java-based voting system with Swing GUI and SQL database, preventing multiple votes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Swing</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stock Market Simulation -->
+                <div class="project-card">
+                    <img src="assets/stock_market_simulation.jpg" alt="Stock Market Simulation" class="project-img">
+                    <div class="project-info">
+                        <h3>Stock Market Simulation</h3>
+                        <p>C++ application simulating stock trading with buying/selling shares and account management.</p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-grid">
+                <!-- Sample certifications - you can add all 17 -->
+                <div class="cert-card">
+                    <h3>Data Science Training Program</h3>
+                    <div class="provider">GeeksforGeeks x IBM</div>
+                    <div class="date">January 2025 - April 2025</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Mastering Machine Learning</h3>
+                    <div class="provider">GeeksforGeeks</div>
+                    <div class="date">November 2024 - December 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>SQL Mastery for Data Science</h3>
+                    <div class="provider">GeeksforGeeks</div>
+                    <div class="date">October 2024 - November 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Mastering Generative AI and ChatGPT</h3>
+                    <div class="provider">GeeksforGeeks</div>
+                    <div class="date">September 2024 - October 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Python Beginner to Advanced</h3>
+                    <div class="provider">GeeksforGeeks</div>
+                    <div class="date">April 2024 - May 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to Java</h3>
+                    <div class="provider">Oracle</div>
+                    <div class="date">February 2024 - March 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Mastering Java Programming</h3>
+                    <div class="provider">GeeksforGeeks</div>
+                    <div class="date">February 2024 - May 2024</div>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to SQL</h3>
+                    <div class="provider">Simplilearn</div>
+                    <div class="date">January 2024 - February 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra-curricular Section -->
+    <section id="extra" class="extra-curricular">
+        <div class="container">
+            <div class="section-title">
+                <h2>Extra-Curricular Activities</h2>
+            </div>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Animal Care Volunteer</h3>
+                    <p>Saahas for Pune - Animal Care Centre</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Social Service Volunteer</h3>
+                    <p>Tara Sofosh Dadhphale Centre for differently-abled people</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>yash.jahagirdar30@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 7588290149</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links-large">
+                    <h3>Connect with me</h3>
+                    <div class="social-grid">
+                        <a href="https://www.linkedin.com/in/yashjahagirdar/" class="social-card" target="_blank" rel="noopener">
+                            <div class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Yash-Jahagirdar" class="social-card" target="_blank" rel="noopener">
+                            <div class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-card email-copy-btn">
+                          <div class="social-icon">
+                              <i class="fas fa-copy"></i>
+                          </div>
+                          <span>Copy Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; 2025 Yash Jahagirdar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
